@@ -1,0 +1,26 @@
+<div class="parent">
+  <div class="module">
+    <span>Module:1</span>
+    <div class="navbar">
+      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
+      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+    </div>
+    <router-outlet name="module1"></router-outlet>
+  </div>
+  <div class="module">
+    <span>Module:2</span>
+    <div class="navbar">
+      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
+      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+    </div>
+    <router-outlet name="module2"></router-outlet>
+  </div>
+  <div class="module">
+    <span>Module:3</span>
+    <div class="navbar">
+      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
+      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+    </div>
+    <router-outlet name="module3"></router-outlet>
+  </div>
+</div>
