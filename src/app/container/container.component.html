@@ -1,26 +1,26 @@
 <div class="parent">
-  <div class="module">
-    <span>Module:1</span>
+  <div class="routes">
+    <span>Route:1</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
-      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route1: ['route1-child1'] } }]">Child1</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route1: ['route1-child2'] } }]">Child2</a>
     </div>
-    <router-outlet name="module1"></router-outlet>
+    <router-outlet name="route1"></router-outlet>
   </div>
-  <div class="module">
-    <span>Module:2</span>
+  <div class="routes">
+    <span>Route:2</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
-      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route2: ['route2-child1'] } }]">Child1</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route2: ['route2-child2'] } }]">Child2</a>
     </div>
-    <router-outlet name="module2"></router-outlet>
+    <router-outlet name="route2"></router-outlet>
   </div>
-  <div class="module">
-    <span>Module:3</span>
+  <div class="routes">
+    <span>Route:3</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="['/child1']">Child1</a>
-      <a class="navbar__link" [routerLink]="['/child2']">Child2</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route3: ['route3-child1'] } }]">Child1</a>
+      <a class="navbar__link" [routerLink]="[{ outlets: { route3: ['route3-child2'] } }]">Child2</a>
     </div>
-    <router-outlet name="module3"></router-outlet>
+    <router-outlet name="route3"></router-outlet>
   </div>
 </div>
