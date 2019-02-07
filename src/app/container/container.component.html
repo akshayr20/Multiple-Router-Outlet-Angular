@@ -2,24 +2,24 @@
   <div class="routes">
     <span>Route:1</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="[{ outlets: { route1: ['route1-child1'] } }]">Child1</a>
-      <a class="navbar__link" [routerLink]="[{ outlets: { route1: ['route1-child2'] } }]">Child2</a>
+      <a class="navbar__link" routerLinkActive="darkGrey" [routerLink]="[{ outlets: { route1: ['route1-child1'] } }]">Child1</a>
+      <a class="navbar__link" (click)="navigateTo('route1-child2')">Child2</a>
     </div>
     <router-outlet name="route1"></router-outlet>
   </div>
   <div class="routes">
     <span>Route:2</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="[{ outlets: { route2: ['route2-child1'] } }]">Child1</a>
-      <a class="navbar__link" [routerLink]="[{ outlets: { route2: ['route2-child2'] } }]">Child2</a>
+      <a class="navbar__link" routerLinkActive="darkGrey" [routerLink]="[{ outlets: { route2: ['route2-child1'] } }]">Child1</a>
+      <a class="navbar__link" (click)="navigateTo('route2-child2')">Child2</a>
     </div>
     <router-outlet name="route2"></router-outlet>
   </div>
   <div class="routes">
     <span>Route:3</span>
     <div class="navbar">
-      <a class="navbar__link" [routerLink]="[{ outlets: { route3: ['route3-child1'] } }]">Child1</a>
-      <a class="navbar__link" [routerLink]="[{ outlets: { route3: ['route3-child2'] } }]">Child2</a>
+      <a class="navbar__link" routerLinkActive="darkGrey" [routerLink]="[{ outlets: { route3: ['route3-child1'] } }]">Child1</a>
+      <a class="navbar__link" (click)="navigateTo('route3-child2')">Child2</a>
     </div>
     <router-outlet name="route3"></router-outlet>
   </div>

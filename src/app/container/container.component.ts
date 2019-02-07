@@ -11,8 +11,10 @@ export class ContainerComponent implements OnInit {
 
   ngOnInit() {}
 
-  navigateTo(route: string): void {
+  navigateTo(route): void {
     const outlet = route.split('-')[0];
-    this.router.navigate(['', { outlets: { outlet: [`${route}`] } }]);
+    this.router.navigate([{ outlets: { [outlet]: [`${route}`] } }], {
+      relativeTo: this.route
+    });
   }
 }
